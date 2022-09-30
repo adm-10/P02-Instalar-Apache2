@@ -110,3 +110,41 @@ Accedemos al fichero index.html dirigiendonos a la ruta que hemos mencionado ant
 
 
 <img src="/img/paso5-index-html.PNG" alt="index" width="600px" />
+
+
+Para trabajar con la configuración de apache se han creado diferentes ficheros, que se encuentran en la ruta /etc/apache2.Para saber que tiene una correcta escritura se puede usar el comando apache2ctl -t.
+
+```
+apache2ctl -t.
+```
+Al lanzarlo nos advierte que le demos un nombre al servidor.
+
+ - [x] 10.1 Nos recomienda darle un ServerName.
+
+
+<img src="/img/paso7-apache2ctl.PNG" alt="server" width="600px" />
+
+Para ello vamos hacia apache2.conf y con la ayuda de **nano** podemos modificar dicho ficchero, y añadirle un ServerName.
+
+```
+nano apache2.conf
+```
+
+ - [x] 10.2 ServerName.
+
+
+<img src="/img/paso6-serverName.PNG" alt="server2" width="600px" />
+
+
+Guardamos el fichero y la nueva comfiguración.
+volvemos a lanzar el comando apache2ctl -t. y ahora nos data el **OK**
+Y para terminar podemos recargar la nueva confiuración con el siguiente comando:
+
+```
+apache2 reload
+```
+
+ - [x] 10.2 Lanzamos el Reload.
+
+
+<img src="/img/pasoFinal-reload.PNG" alt="reload" width="600px" />
