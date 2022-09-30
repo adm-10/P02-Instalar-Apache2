@@ -136,7 +136,7 @@ nano apache2.conf
 
 
 Guardamos el fichero y la nueva configuración.
-Volvemos a lanzar el comando apache2ctl -t. y ahora nos data el **OK**.
+Volvemos a lanzar el comando ***apache2ctl -t.*** y ahora nos data el **OK**.
 
 Para finalizar realizamos la recargar de la nueva confiuración con el siguiente comando:
 
