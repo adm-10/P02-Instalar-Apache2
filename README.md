@@ -88,7 +88,7 @@ service apache2 status --> comprobamos el estado del servicio
 ```
 
 
-   - [x] 8. Comprobando estado de apache.
+   - [x] 8.1 Comprobando estado de apache.
 
 Podemos ver que el estado esta **active**
 
@@ -98,7 +98,7 @@ Podemos ver que el estado esta **active**
 Para comprovar que apache se esta ejecutando, abrimos un navegador, ponemos ***localhost*** y nos aparece la paguina de apache.
 Este fichero html se encuentra en la ruta /var/www/html
 
-   - [x] 8. Página de apache.
+   - [x] 8.2 Página de apache.
 
 
 <img src="/img/paso4 localhost.PNG" alt="localhost" width="600px" />
@@ -144,7 +144,7 @@ Y para terminar podemos recargar la nueva confiuración con el siguiente comando
 apache2 reload
 ```
 
- - [x] 10.2 Lanzamos el Reload.
+ - [x] 10.3 Lanzamos el Reload.
 
 
 <img src="/img/pasoFinal-reload.PNG" alt="reload" width="600px" />
