@@ -4,8 +4,7 @@
 
 ##  – Instalar Apache2 en una máquina virtual
 
-Una vez importada la VirtualBox, arrancada y comprobado que tiene conexión a internet
-Abrimos un terminal y procedemos a instalar y actualizar el sistema.
+Una vez importada la VirtualBox, arrancada y comprobado que tiene conexión a internet abrimos un terminal y procedemos a instalar y actualizar el sistema.
 
 ```
 sudo apt-get update
@@ -90,13 +89,13 @@ service apache2 status --> comprobamos el estado del servicio
 
    - [x] 8.1 Comprobando estado de apache.
 
-Podemos ver que el estado esta **active**
+Podemos ver que el estado está **active**
 
 <img src="/img/paso3 apache2 ejecutando.PNG" alt="apache active" width="600px" />
 
 
-Para comprovar que apache se esta ejecutando, abrimos un navegador, ponemos ***localhost*** y nos aparece la paguina de apache.
-Este fichero html se encuentra en la ruta /var/www/html
+Para comprovar que apache se está ejecutando, abrimos un navegador, ponemos ***localhost*** y nos aparece la página de apache.
+Este fichero **html** se encuentra en la ruta /var/www/html
 
    - [x] 8.2 Página de apache.
 
@@ -124,7 +123,7 @@ Al lanzarlo nos advierte que le demos un nombre al servidor.
 
 <img src="/img/paso7-apache2ctl.PNG" alt="server" width="600px" />
 
-Para ello vamos hacia apache2.conf y con la ayuda de **nano** podemos modificar dicho ficchero, y añadirle un ServerName.
+Para ello vamos hacia apache2.conf y con la ayuda de **nano** podemos modificar dicho fichero, y añadirle un ServerName.
 
 ```
 nano apache2.conf
@@ -136,9 +135,10 @@ nano apache2.conf
 <img src="/img/paso6-serverName.PNG" alt="server2" width="600px" />
 
 
-Guardamos el fichero y la nueva comfiguración.
-volvemos a lanzar el comando apache2ctl -t. y ahora nos data el **OK**
-Y para terminar podemos recargar la nueva confiuración con el siguiente comando:
+Guardamos el fichero y la nueva configuración.
+Volvemos a lanzar el comando apache2ctl -t. y ahora nos data el **OK**.
+
+Para finalizar realizamos la recargar de la nueva confiuración con el siguiente comando:
 
 ```
 apache2 reload
